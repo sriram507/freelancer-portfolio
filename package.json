@@ -1,0 +1,21 @@
+{
+  "name": "freelancer-portfolio",
+  "version": "1.0.0",
+  "description": "MERN Stack Developer Portfolio 🌟 Welcome to my professional portfolio as a MERN Stack Developer with 3+ years of experience! 🌟  This portfolio showcases my skills, projects, and expertise in building modern, scalable, and efficient web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js).",
+  "main": "script.js",
+  "scripts": {
+      "start": "live-server"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sriram507/freelancer-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sriram507/freelancer-portfolio/issues"
+  },
+  "homepage": "https://github.com/sriram507/freelancer-portfolio#readme"
+}
