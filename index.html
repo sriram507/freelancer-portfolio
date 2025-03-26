@@ -18,16 +18,19 @@
   <link rel="stylesheet" href="styles.css">
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+  
+
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
       <!-- Brand Name / Logo -->
       <a class="navbar-brand" href="#">
         <div class="d-flex align-items-center">
-          <img src="./assets/images/Colorful Minimalist Digital Printing Logo.png" alt="Logo" height="36" class="d-inline-block align-top me-2">
+          <img src="./assets/images/Colorful Minimalist Digital Printing Logo.png" alt="Logo" height="40" class="d-inline-block align-top me-2 logo-img">
           <div>
-            <span class="fw-bold">Full-Stack MERN Developer </span>
+            <span class="fw-bold brand-title">Full-Stack MERN Developer</span>
           </div>
         </div>
       </a>
@@ -42,38 +45,38 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="#about" data-text="About">
-              <span>About</span>
+            <a class="nav-link" href="#about">
+              <span class="nav-link-inner">About</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#services" data-text="Services">
-              <span>Services</span>
+            <a class="nav-link" href="#services">
+              <span class="nav-link-inner">Services</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#skills" data-text="Skills">
-              <span>Skills</span>
+            <a class="nav-link" href="#skills">
+              <span class="nav-link-inner">Skills</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#projects" data-text="Projects">
-              <span>Projects</span>
+            <a class="nav-link" href="#projects">
+              <span class="nav-link-inner">Projects</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#testimonials" data-text="Testimonials">
-              <span>Testimonials</span>
+            <a class="nav-link" href="#testimonials">
+              <span class="nav-link-inner">Testimonials</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact" data-text="Contact">
-              <span>Contact</span>
+            <a class="nav-link" href="#contact">
+              <span class="nav-link-inner">Contact</span>
             </a>
           </li>
         </ul>
         <div class="ms-lg-3 mt-3 mt-lg-0">
-          <a href="#contact" class="btn btn-primary btn-hover-glow px-4 py-2">
+          <a href="#contact" class="btn btn-primary btn-hire-me px-4 py-2">
             <i class="fas fa-paper-plane me-2"></i>Hire Me
           </a>
         </div>
@@ -100,152 +103,234 @@
     </div>
   </div>
 </section>
-
-<!-- About Section -->
-<section id="about" class="py-5 bg-light">
+ 
+<!-- About Me Section -->
+<section id="about" class="about-section">
   <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-6" data-aos="fade-right">
-        <h2 class="text-primary fw-bold mb-3">About Me</h2>
-        <p class="fs-5">
-          I'm a passionate <strong>MERN Stack Developer</strong> with <strong>3+ years of experience</strong> 
-          building scalable, efficient, and user-friendly web applications. My expertise includes 
-          <span class="text-primary fw-bold">MongoDB, Express.js, React.js, and Node.js</span>.
-        </p>
-        <p class="fs-5">
-          I specialize in crafting high-performance web applications, implementing secure authentication systems, 
-          and optimizing database solutions. I'm dedicated to solving complex problems and delivering exceptional digital experiences.
-        </p>
-        <div class="row mt-4">
-          <div class="col-md-6">
-            <ul class="list-unstyled">
-              <li><i class="fas fa-check-circle text-success me-2"></i> 3+ Years Experience</li>
-              <li><i class="fas fa-check-circle text-success me-2"></i> 10+ Global Clients</li>
-              <li><i class="fas fa-check-circle text-success me-2"></i> Fullstack Expertise</li>
-            </ul>
+    <div class="about-grid">
+      <!-- Text Content -->
+      <div class="about-content" data-aos="fade-right">
+        <h2 class="section-title">
+          <span class="title-text">About Me</span>
+          <span class="title-decoration"></span>
+        </h2>
+        
+        <div class="about-text">
+          <p class="lead-text">
+            I'm a passionate <span class="highlight">MERN Stack Developer</span> with 
+            <span class="highlight">3+ years of experience</span> building scalable, 
+            efficient web applications.
+          </p>
+          
+          <p>
+            My expertise includes <span class="skill-tag">MongoDB</span>, 
+            <span class="skill-tag">Express.js</span>, <span class="skill-tag">React.js</span>, 
+            and <span class="skill-tag">Node.js</span>. I specialize in crafting 
+            high-performance applications with secure authentication and optimized databases.
+          </p>
+          
+          <div class="about-features">
+            <div class="feature-column">
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="feature-text">
+                  <h4>3+ Years</h4>
+                  <p>Professional Experience</p>
+                </div>
+              </div>
+              
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-globe"></i>
+                </div>
+                <div class="feature-text">
+                  <h4>10+</h4>
+                  <p>Global Clients</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="feature-column">
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-code"></i>
+                </div>
+                <div class="feature-text">
+                  <h4>Clean Code</h4>
+                  <p>Best Practices</p>
+                </div>
+              </div>
+              
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="feature-text">
+                  <h4>Responsive</h4>
+                  <p>Design Expert</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-6">
-            <ul class="list-unstyled">
-              <li><i class="fas fa-check-circle text-success me-2"></i> Agile Methodology</li>
-              <li><i class="fas fa-check-circle text-success me-2"></i> Clean Code</li>
-              <li><i class="fas fa-check-circle text-success me-2"></i> Responsive Design</li>
-            </ul>
+          
+          <div class="about-actions">
+            <a href="#contact" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i> Let's Work Together
+            </a>
+            <a href="./assets/docs/Sriram-Injarapu-Resume.pdf" download class="btn btn-outline">
+              <i class="fas fa-download"></i> Download CV
+            </a>
           </div>
-        </div>
-        <div class="d-flex mt-4">
-          <a href="#contact" class="btn btn-primary me-3">Let's Work Together</a>
-          <a href="./assets/docs/Sriram-Injarapu-Resume.pdf" download class="btn btn-outline-primary">
-            <i class="fas fa-download me-2"></i>Download CV
-          </a>
         </div>
       </div>
-      <div class="col-lg-6 text-center" data-aos="fade-left">
-        <img src="./assets/images/WhatsApp Image 2023-05-10 at 11.55.57.jpeg" alt="Sriram Injarapu" class="img-fluid rounded shadow-lg about-image">
+      
+      <!-- Image Content -->
+      <div class="about-image-container" data-aos="fade-left">
+        <div class="image-wrapper">
+          <img src="./assets/images/WhatsApp Image 2023-05-10 at 11.55.57.jpeg" 
+               alt="Sriram Injarapu" 
+               class="profile-image"
+               loading="lazy">
+          
+          <div class="image-decoration-1"></div>
+          <div class="image-decoration-2"></div>
+          <div class="image-badge">
+            <i class="fas fa-medal"></i>
+            <span>MERN Expert</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+  
+  <!-- Background Decorations -->
+  <div class="about-bg-deco-1"></div>
+  <div class="about-bg-deco-2"></div>
 </section>
+
 
 <!-- Services Section -->
 <section id="services" class="py-5">
   <div class="container">
-    <div class="section-header text-center mb-5" data-aos="fade-up">
+    <!-- Section Header -->
+    <div class="section-header text-center mb-5">
       <h2 class="text-primary fw-bold">My Services</h2>
-      <p class="text-muted">Comprehensive solutions tailored to your business needs</p>
+      <p class="text-muted">Professional solutions tailored to your needs</p>
     </div>
-    <div class="row">
-      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="card service-card h-100 text-center">
-          <div class="card-body p-4">
+
+    <!-- Services Grid -->
+    <div class="row g-4">
+      <!-- Service 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="service-card-body">
             <div class="service-icon-wrapper">
-              <i class="fas fa-laptop-code service-icon text-primary"></i>
+              <i class="fas fa-code service-icon"></i>
             </div>
-            <h5 class="card-title fw-bold mt-3">Fullstack Development</h5>
-            <p class="card-text">End-to-end web application development using the MERN stack with optimized performance.</p>
-            <ul class="service-features list-unstyled text-start mt-3">
-              <li><i class="fas fa-check text-success me-2"></i> Custom web applications</li>
-              <li><i class="fas fa-check text-success me-2"></i> API integration</li>
-              <li><i class="fas fa-check text-success me-2"></i> Performance optimization</li>
+            <h3 class="h4 text-center mb-3">Web Development</h3>
+            <p class="text-center mb-4">Custom, responsive websites built with modern technologies.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> React.js Applications</li>
+              <li><i class="fas fa-check"></i> Node.js Backend</li>
+              <li><i class="fas fa-check"></i> RESTful APIs</li>
+              <li><i class="fas fa-check"></i> MongoDB Integration</li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="card service-card h-100 text-center">
-          <div class="card-body p-4">
+
+      <!-- Service 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="service-card-body">
             <div class="service-icon-wrapper">
-              <i class="fas fa-mobile-alt service-icon text-success"></i>
+              <i class="fas fa-mobile-alt service-icon"></i>
             </div>
-            <h5 class="card-title fw-bold mt-3">Responsive UI/UX</h5>
-            <p class="card-text">Modern, accessible, and mobile-first designs that engage users across all devices.</p>
-            <ul class="service-features list-unstyled text-start mt-3">
-              <li><i class="fas fa-check text-success me-2"></i> Mobile-first approach</li>
-              <li><i class="fas fa-check text-success me-2"></i> User-centered design</li>
-              <li><i class="fas fa-check text-success me-2"></i> Cross-browser compatibility</li>
+            <h3 class="h4 text-center mb-3">Mobile Development</h3>
+            <p class="text-center mb-4">Cross-platform mobile apps that work everywhere.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> React Native Apps</li>
+              <li><i class="fas fa-check"></i> iOS & Android</li>
+              <li><i class="fas fa-check"></i> Firebase Integration</li>
+              <li><i class="fas fa-check"></i> Offline Support</li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="card service-card h-100 text-center">
-          <div class="card-body p-4">
+
+      <!-- Service 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="service-card-body">
             <div class="service-icon-wrapper">
-              <i class="fas fa-database service-icon text-danger"></i>
+              <i class="fas fa-paint-brush service-icon"></i>
             </div>
-            <h5 class="card-title fw-bold mt-3">Database Management</h5>
-            <p class="card-text">Design and optimization of database architectures for scalability and security.</p>
-            <ul class="service-features list-unstyled text-start mt-3">
-              <li><i class="fas fa-check text-success me-2"></i> Database design</li>
-              <li><i class="fas fa-check text-success me-2"></i> Query optimization</li>
-              <li><i class="fas fa-check text-success me-2"></i> Data security</li>
+            <h3 class="h4 text-center mb-3">UI/UX Design</h3>
+            <p class="text-center mb-4">Beautiful interfaces with exceptional user experience.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Figma Prototyping</li>
+              <li><i class="fas fa-check"></i> User Research</li>
+              <li><i class="fas fa-check"></i> Wireframing</li>
+              <li><i class="fas fa-check"></i> Design Systems</li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="card service-card h-100 text-center">
-          <div class="card-body p-4">
+
+      <!-- Service 4 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="service-card-body">
             <div class="service-icon-wrapper">
-              <i class="fas fa-lock service-icon text-warning"></i>
+              <i class="fas fa-server service-icon"></i>
             </div>
-            <h5 class="card-title fw-bold mt-3">Security & Authentication</h5>
-            <p class="card-text">Implementation of robust security measures to protect your application and users.</p>
-            <ul class="service-features list-unstyled text-start mt-3">
-              <li><i class="fas fa-check text-success me-2"></i> JWT authentication</li>
-              <li><i class="fas fa-check text-success me-2"></i> OAuth integration</li>
-              <li><i class="fas fa-check text-success me-2"></i> Data encryption</li>
+            <h3 class="h4 text-center mb-3">Backend Development</h3>
+            <p class="text-center mb-4">Robust server-side solutions for your applications.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Express.js</li>
+              <li><i class="fas fa-check"></i> Django</li>
+              <li><i class="fas fa-check"></i> Database Design</li>
+              <li><i class="fas fa-check"></i> API Development</li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="card service-card h-100 text-center">
-          <div class="card-body p-4">
+
+      <!-- Service 5 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="service-card-body">
             <div class="service-icon-wrapper">
-              <i class="fas fa-cloud service-icon text-info"></i>
+              <i class="fas fa-search-dollar service-icon"></i>
             </div>
-            <h5 class="card-title fw-bold mt-3">Cloud Deployment</h5>
-            <p class="card-text">Seamless deployment and hosting solutions on leading cloud platforms.</p>
-            <ul class="service-features list-unstyled text-start mt-3">
-              <li><i class="fas fa-check text-success me-2"></i> AWS deployment</li>
-              <li><i class="fas fa-check text-success me-2"></i> Firebase hosting</li>
-              <li><i class="fas fa-check text-success me-2"></i> CI/CD pipelines</li>
+            <h3 class="h4 text-center mb-3">SEO Optimization</h3>
+            <p class="text-center mb-4">Get found by your target audience.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Technical SEO</li>
+              <li><i class="fas fa-check"></i> Keyword Research</li>
+              <li><i class="fas fa-check"></i> Performance Optimization</li>
+              <li><i class="fas fa-check"></i> Analytics Setup</li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="card service-card h-100 text-center">
-          <div class="card-body p-4">
+
+      <!-- Service 6 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="service-card-body">
             <div class="service-icon-wrapper">
-              <i class="fas fa-cogs service-icon text-dark"></i>
+              <i class="fas fa-cloud service-icon"></i>
             </div>
-            <h5 class="card-title fw-bold mt-3">API Development</h5>
-            <p class="card-text">Building efficient, well-documented APIs for seamless integration.</p>
-            <ul class="service-features list-unstyled text-start mt-3">
-              <li><i class="fas fa-check text-success me-2"></i> RESTful APIs</li>
-              <li><i class="fas fa-check text-success me-2"></i> GraphQL endpoints</li>
-              <li><i class="fas fa-check text-success me-2"></i> WebSocket integration</li>
+            <h3 class="h4 text-center mb-3">Cloud Solutions</h3>
+            <p class="text-center mb-4">Scalable infrastructure for your applications.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> AWS Deployment</li>
+              <li><i class="fas fa-check"></i> CI/CD Pipelines</li>
+              <li><i class="fas fa-check"></i> Serverless Architecture</li>
+              <li><i class="fas fa-check"></i> Docker Containers</li>
             </ul>
           </div>
         </div>
@@ -254,53 +339,69 @@
   </div>
 </section>
 
-<!-- Skills Section -->
+<!-- Skills Section with Scroll Fix -->
 <section id="skills" class="py-5 bg-light">
+  <!-- Invisible anchor for precise scrolling -->
+  <span id="skills-anchor" class="invisible" style="position: absolute; top: -70px;"></span>
+  
   <div class="container">
     <div class="section-header text-center mb-5" data-aos="fade-up">
       <h2 class="text-primary fw-bold">Technical Skills</h2>
       <p class="text-muted">Technologies I work with daily</p>
     </div>
-    <div class="row">
+    
+    <div class="row g-4">
       <!-- Frontend Skills -->
-      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="card h-100">
-          <div class="card-body">
-            <h4 class="text-center fw-bold mb-4">Frontend Development</h4>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body p-4">
+            <h4 class="text-center fw-bold mb-4 text-primary">Frontend Development</h4>
+            
             <div class="skill-item mb-3">
-              <div class="d-flex justify-content-between mb-1">
-                <span><i class="fab fa-react text-primary me-2"></i> React.js</span>
-                <span>95%</span>
+              <div class="d-flex justify-content-between mb-2">
+                <span class="fw-medium">
+                  <i class="fab fa-react text-primary me-2"></i> React.js
+                </span>
+                <span class="text-muted">95%</span>
               </div>
               <div class="progress" style="height: 8px;">
-                <div class="progress-bar bg-primary" role="progressbar" style="width: 95%"></div>
+                <div class="progress-bar bg-primary progress-bar-striped" role="progressbar" style="width: 95%"></div>
               </div>
             </div>
+            
             <div class="skill-item mb-3">
-              <div class="d-flex justify-content-between mb-1">
-                <span><i class="fab fa-js-square text-warning me-2"></i> JavaScript (ES6+)</span>
-                <span>90%</span>
+              <div class="d-flex justify-content-between mb-2">
+                <span class="fw-medium">
+                  <i class="fab fa-js-square text-warning me-2"></i> JavaScript (ES6+)
+                </span>
+                <span class="text-muted">90%</span>
               </div>
               <div class="progress" style="height: 8px;">
-                <div class="progress-bar bg-warning" role="progressbar" style="width: 90%"></div>
+                <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 90%"></div>
               </div>
             </div>
+            
             <div class="skill-item mb-3">
-              <div class="d-flex justify-content-between mb-1">
-                <span><i class="fab fa-html5 text-danger me-2"></i> HTML5</span>
-                <span>85%</span>
+              <div class="d-flex justify-content-between mb-2">
+                <span class="fw-medium">
+                  <i class="fab fa-html5 text-danger me-2"></i> HTML5
+                </span>
+                <span class="text-muted">85%</span>
               </div>
               <div class="progress" style="height: 8px;">
-                <div class="progress-bar bg-danger" role="progressbar" style="width: 85%"></div>
+                <div class="progress-bar bg-danger progress-bar-striped" role="progressbar" style="width: 85%"></div>
               </div>
             </div>
-            <div class="skill-item mb-3">
-              <div class="d-flex justify-content-between mb-1">
-                <span><i class="fab fa-css3-alt text-info me-2"></i> CSS3 & Tailwind</span>
-                <span>88%</span>
+            
+            <div class="skill-item">
+              <div class="d-flex justify-content-between mb-2">
+                <span class="fw-medium">
+                  <i class="fab fa-css3-alt text-info me-2"></i> CSS3 & Tailwind
+                </span>
+                <span class="text-muted">88%</span>
               </div>
               <div class="progress" style="height: 8px;">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 88%"></div>
+                <div class="progress-bar bg-info progress-bar-striped" role="progressbar" style="width: 88%"></div>
               </div>
             </div>
           </div>
@@ -308,44 +409,56 @@
       </div>
 
       <!-- Backend Skills -->
-      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="card h-100">
-          <div class="card-body">
-            <h4 class="text-center fw-bold mb-4">Backend Development</h4>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body p-4">
+            <h4 class="text-center fw-bold mb-4 text-success">Backend Development</h4>
+            
             <div class="skill-item mb-3">
-              <div class="d-flex justify-content-between mb-1">
-                <span><i class="fab fa-node text-success me-2"></i> Node.js</span>
-                <span>92%</span>
+              <div class="d-flex justify-content-between mb-2">
+                <span class="fw-medium">
+                  <i class="fab fa-node text-success me-2"></i> Node.js
+                </span>
+                <span class="text-muted">92%</span>
               </div>
               <div class="progress" style="height: 8px;">
-                <div class="progress-bar bg-success" role="progressbar" style="width: 92%"></div>
+                <div class="progress-bar bg-success progress-bar-striped" role="progressbar" style="width: 92%"></div>
               </div>
             </div>
+            
             <div class="skill-item mb-3">
-              <div class="d-flex justify-content-between mb-1">
-                <span><i class="fas fa-server text-dark me-2"></i> Express.js</span>
-                <span>88%</span>
+              <div class="d-flex justify-content-between mb-2">
+                <span class="fw-medium">
+                  <i class="fas fa-server text-dark me-2"></i> Express.js
+                </span>
+                <span class="text-muted">88%</span>
               </div>
               <div class="progress" style="height: 8px;">
-                <div class="progress-bar bg-dark" role="progressbar" style="width: 88%"></div>
+                <div class="progress-bar bg-dark progress-bar-striped" role="progressbar" style="width: 88%"></div>
               </div>
             </div>
+            
             <div class="skill-item mb-3">
-              <div class="d-flex justify-content-between mb-1">
-                <span><i class="fas fa-key text-warning me-2"></i> Authentication</span>
-                <span>90%</span>
+              <div class="d-flex justify-content-between mb-2">
+                <span class="fw-medium">
+                  <i class="fas fa-key text-warning me-2"></i> Authentication
+                </span>
+                <span class="text-muted">90%</span>
               </div>
               <div class="progress" style="height: 8px;">
-                <div class="progress-bar bg-warning" role="progressbar" style="width: 90%"></div>
+                <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 90%"></div>
               </div>
             </div>
-            <div class="skill-item mb-3">
-              <div class="d-flex justify-content-between mb-1">
-                <span><i class="fas fa-plug text-primary me-2"></i> REST/GraphQL</span>
-                <span>85%</span>
+            
+            <div class="skill-item">
+              <div class="d-flex justify-content-between mb-2">
+                <span class="fw-medium">
+                  <i class="fas fa-plug text-primary me-2"></i> REST/GraphQL
+                </span>
+                <span class="text-muted">85%</span>
               </div>
               <div class="progress" style="height: 8px;">
-                <div class="progress-bar bg-primary" role="progressbar" style="width: 85%"></div>
+                <div class="progress-bar bg-primary progress-bar-striped" role="progressbar" style="width: 85%"></div>
               </div>
             </div>
           </div>
@@ -353,44 +466,56 @@
       </div>
 
       <!-- Database & DevOps -->
-      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="card h-100">
-          <div class="card-body">
-            <h4 class="text-center fw-bold mb-4">Database & DevOps</h4>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body p-4">
+            <h4 class="text-center fw-bold mb-4 text-danger">Database & DevOps</h4>
+            
             <div class="skill-item mb-3">
-              <div class="d-flex justify-content-between mb-1">
-                <span><i class="fas fa-database text-danger me-2"></i> MongoDB</span>
-                <span>90%</span>
+              <div class="d-flex justify-content-between mb-2">
+                <span class="fw-medium">
+                  <i class="fas fa-database text-danger me-2"></i> MongoDB
+                </span>
+                <span class="text-muted">90%</span>
               </div>
               <div class="progress" style="height: 8px;">
-                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%"></div>
+                <div class="progress-bar bg-danger progress-bar-striped" role="progressbar" style="width: 90%"></div>
               </div>
             </div>
+            
             <div class="skill-item mb-3">
-              <div class="d-flex justify-content-between mb-1">
-                <span><i class="fas fa-server text-info me-2"></i> SQL Databases</span>
-                <span>80%</span>
+              <div class="d-flex justify-content-between mb-2">
+                <span class="fw-medium">
+                  <i class="fas fa-server text-info me-2"></i> SQL Databases
+                </span>
+                <span class="text-muted">80%</span>
               </div>
               <div class="progress" style="height: 8px;">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 80%"></div>
+                <div class="progress-bar bg-info progress-bar-striped" role="progressbar" style="width: 80%"></div>
               </div>
             </div>
+            
             <div class="skill-item mb-3">
-              <div class="d-flex justify-content-between mb-1">
-                <span><i class="fas fa-cloud text-primary me-2"></i> Cloud Services</span>
-                <span>85%</span>
+              <div class="d-flex justify-content-between mb-2">
+                <span class="fw-medium">
+                  <i class="fas fa-cloud text-primary me-2"></i> Cloud Services
+                </span>
+                <span class="text-muted">85%</span>
               </div>
               <div class="progress" style="height: 8px;">
-                <div class="progress-bar bg-primary" role="progressbar" style="width: 85%"></div>
+                <div class="progress-bar bg-primary progress-bar-striped" role="progressbar" style="width: 85%"></div>
               </div>
             </div>
-            <div class="skill-item mb-3">
-              <div class="d-flex justify-content-between mb-1">
-                <span><i class="fab fa-docker text-primary me-2"></i> Docker & CI/CD</span>
-                <span>75%</span>
+            
+            <div class="skill-item">
+              <div class="d-flex justify-content-between mb-2">
+                <span class="fw-medium">
+                  <i class="fab fa-docker text-primary me-2"></i> Docker & CI/CD
+                </span>
+                <span class="text-muted">75%</span>
               </div>
               <div class="progress" style="height: 8px;">
-                <div class="progress-bar bg-primary" role="progressbar" style="width: 75%"></div>
+                <div class="progress-bar bg-primary progress-bar-striped" role="progressbar" style="width: 75%"></div>
               </div>
             </div>
           </div>
@@ -400,33 +525,44 @@
   </div>
 </section>
 
-<!-- Projects Section -->
+
+<!-- Projects Section with Scroll Fix -->
 <section id="projects" class="py-5">
+  <!-- Invisible anchor for precise scrolling -->
+  <span id="projects-anchor" class="invisible" style="position: absolute; top: -70px;"></span>
+  
   <div class="container">
     <div class="section-header text-center mb-5" data-aos="fade-up">
       <h2 class="text-primary fw-bold">Featured Projects</h2>
       <p class="text-muted">Some of my recent work</p>
     </div>
+    
     <div class="row g-4">
       <!-- Project 1 -->
       <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="card project-card h-100">
-          <div class="project-badge">Featured</div>
-          <img src="./assets/images/stock-vector-week-of-the-days-list-week-day-pie-chart-for-kindergarten-people-learning-concept-for-kids-2183314437.jpg" class="card-img-top" alt="E-Commerce Platform">
+        <div class="card project-card h-100 border-0 shadow-sm overflow-hidden">
+          <div class="position-relative">
+            <div class="project-badge bg-primary text-white">Featured</div>
+            <img src="./assets/images/stock-vector-week-of-the-days-list-week-day-pie-chart-for-kindergarten-people-learning-concept-for-kids-2183314437.jpg" 
+                 class="card-img-top project-image" 
+                 alt="E-Commerce Platform"
+                 loading="lazy">
+            <div class="project-overlay"></div>
+          </div>
           <div class="card-body">
-            <h5 class="card-title">E-Commerce Platform</h5>
-            <p class="card-text">A comprehensive e-commerce solution with product management, cart functionality, and secure payment processing.</p>
+            <h5 class="card-title fw-bold">E-Commerce Platform</h5>
+            <p class="card-text text-muted">A comprehensive e-commerce solution with product management, cart functionality, and secure payment processing.</p>
             <div class="tech-stack mb-3">
-              <span class="badge bg-primary">React</span>
-              <span class="badge bg-success">Node.js</span>
-              <span class="badge bg-warning">MongoDB</span>
-              <span class="badge bg-info">Redux</span>
+              <span class="badge bg-primary bg-opacity-10 text-primary me-1 mb-1">React</span>
+              <span class="badge bg-success bg-opacity-10 text-success me-1 mb-1">Node.js</span>
+              <span class="badge bg-warning bg-opacity-10 text-warning me-1 mb-1">MongoDB</span>
+              <span class="badge bg-info bg-opacity-10 text-info me-1 mb-1">Redux</span>
             </div>
-            <div class="d-flex justify-content-between">
-              <a href="https://ecommerce-demo.com" target="_blank" class="btn btn-sm btn-outline-primary">
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="https://ecommerce-demo.com" target="_blank" class="btn btn-sm btn-outline-primary flex-grow-1 me-2">
                 <i class="fas fa-eye me-1"></i> Live Demo
               </a>
-              <a href="https://github.com/sriram-injarapu/ecommerce" target="_blank" class="btn btn-sm btn-outline-dark">
+              <a href="https://github.com/sriram-injarapu/ecommerce" target="_blank" class="btn btn-sm btn-outline-dark flex-grow-1">
                 <i class="fab fa-github me-1"></i> Code
               </a>
             </div>
@@ -436,22 +572,28 @@
 
       <!-- Project 2 -->
       <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="card project-card h-100">
-          <img src="./assets/images/Your paragraph text.png" class="card-img-top" alt="Blog Application">
+        <div class="card project-card h-100 border-0 shadow-sm overflow-hidden">
+          <div class="position-relative">
+            <img src="./assets/images/Your paragraph text.png" 
+                 class="card-img-top project-image" 
+                 alt="Blog Application"
+                 loading="lazy">
+            <div class="project-overlay"></div>
+          </div>
           <div class="card-body">
-            <h5 class="card-title">Blog Application</h5>
-            <p class="card-text">A modern blog platform with rich text editing, user authentication, and comment system with real-time updates.</p>
+            <h5 class="card-title fw-bold">Blog Application</h5>
+            <p class="card-text text-muted">A modern blog platform with rich text editing, user authentication, and comment system with real-time updates.</p>
             <div class="tech-stack mb-3">
-              <span class="badge bg-primary">Next.js</span>
-              <span class="badge bg-danger">Express</span>
-              <span class="badge bg-warning">Firebase</span>
-              <span class="badge bg-secondary">Mongoose</span>
+              <span class="badge bg-primary bg-opacity-10 text-primary me-1 mb-1">Next.js</span>
+              <span class="badge bg-danger bg-opacity-10 text-danger me-1 mb-1">Express</span>
+              <span class="badge bg-warning bg-opacity-10 text-warning me-1 mb-1">Firebase</span>
+              <span class="badge bg-secondary bg-opacity-10 text-secondary me-1 mb-1">Mongoose</span>
             </div>
-            <div class="d-flex justify-content-between">
-              <a href="https://blog-demo.com" target="_blank" class="btn btn-sm btn-outline-primary">
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="https://blog-demo.com" target="_blank" class="btn btn-sm btn-outline-primary flex-grow-1 me-2">
                 <i class="fas fa-eye me-1"></i> Live Demo
               </a>
-              <a href="https://github.com/sriram-injarapu/blog-app" target="_blank" class="btn btn-sm btn-outline-dark">
+              <a href="https://github.com/sriram-injarapu/blog-app" target="_blank" class="btn btn-sm btn-outline-dark flex-grow-1">
                 <i class="fab fa-github me-1"></i> Code
               </a>
             </div>
@@ -461,23 +603,29 @@
 
       <!-- Project 3 -->
       <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="card project-card h-100">
-          <div class="project-badge">New</div>
-          <img src="./assets/images/DALL·E 2024-12-26 18.09.03 - A clean and modern web application interface showcasing a dynamic workspace finder website. The page includes a navigation bar at the top, a prominent.webp" class="card-img-top" alt="Task Manager">
+        <div class="card project-card h-100 border-0 shadow-sm overflow-hidden">
+          <div class="position-relative">
+            <div class="project-badge bg-success text-white">New</div>
+            <img src="./assets/images/DALL·E 2024-12-26 18.09.03 - A clean and modern web application interface showcasing a dynamic workspace finder website. The page includes a navigation bar at the top, a prominent.webp" 
+                 class="card-img-top project-image" 
+                 alt="Task Manager"
+                 loading="lazy">
+            <div class="project-overlay"></div>
+          </div>
           <div class="card-body">
-            <h5 class="card-title">Task Manager</h5>
-            <p class="card-text">A collaborative task management application with drag-and-drop functionality, real-time updates, and team features.</p>
+            <h5 class="card-title fw-bold">Task Manager</h5>
+            <p class="card-text text-muted">A collaborative task management application with drag-and-drop functionality, real-time updates, and team features.</p>
             <div class="tech-stack mb-3">
-              <span class="badge bg-info">Vue.js</span>
-              <span class="badge bg-success">Node.js</span>
-              <span class="badge bg-secondary">PostgreSQL</span>
-              <span class="badge bg-dark">Socket.io</span>
+              <span class="badge bg-info bg-opacity-10 text-info me-1 mb-1">Vue.js</span>
+              <span class="badge bg-success bg-opacity-10 text-success me-1 mb-1">Node.js</span>
+              <span class="badge bg-secondary bg-opacity-10 text-secondary me-1 mb-1">PostgreSQL</span>
+              <span class="badge bg-dark bg-opacity-10 text-dark me-1 mb-1">Socket.io</span>
             </div>
-            <div class="d-flex justify-content-between">
-              <a href="https://taskmanager-demo.com" target="_blank" class="btn btn-sm btn-outline-primary">
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="https://taskmanager-demo.com" target="_blank" class="btn btn-sm btn-outline-primary flex-grow-1 me-2">
                 <i class="fas fa-eye me-1"></i> Live Demo
               </a>
-              <a href="https://github.com/sriram-injarapu/task-manager" target="_blank" class="btn btn-sm btn-outline-dark">
+              <a href="https://github.com/sriram-injarapu/task-manager" target="_blank" class="btn btn-sm btn-outline-dark flex-grow-1">
                 <i class="fab fa-github me-1"></i> Code
               </a>
             </div>
@@ -485,24 +633,31 @@
         </div>
       </div>
     </div>
+    
     <div class="text-center mt-5" data-aos="fade-up">
-      <a href="#" class="btn btn-primary">View All Projects</a>
+      <a href="#" class="btn btn-primary px-4 py-2">
+        <i class="fas fa-arrow-right me-2"></i> View All Projects
+      </a>
     </div>
   </div>
 </section>
 
-<!-- Testimonials Section -->
+<!-- Testimonials Section with Scroll Fix -->
 <section id="testimonials" class="py-5 bg-light">
+  <!-- Invisible anchor for precise scrolling -->
+  <span id="testimonials-anchor" class="invisible" style="position: absolute; top: -70px;"></span>
+  
   <div class="container">
     <div class="section-header text-center mb-5" data-aos="fade-up">
       <h2 class="text-primary fw-bold">Client Testimonials</h2>
       <p class="text-muted">What my clients say about my work</p>
     </div>
+    
     <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
+      <div class="carousel-inner px-lg-5">
         <!-- Testimonial 1 -->
         <div class="carousel-item active">
-          <div class="testimonial-card text-center p-4 shadow-sm">
+          <div class="testimonial-card text-center p-4 p-md-5 shadow-sm bg-white rounded-3">
             <div class="testimonial-rating mb-3">
               <i class="fas fa-star text-warning"></i>
               <i class="fas fa-star text-warning"></i>
@@ -510,16 +665,25 @@
               <i class="fas fa-star text-warning"></i>
               <i class="fas fa-star text-warning"></i>
             </div>
-            <img src="./assets/images/stock-photo-portrait-of-handsome-smiling-confident-businessman-isolated-on-grey-background-2302576479.jpg" class="rounded-circle mb-3 testimonial-img" alt="John Doe" width="80">
-            <p class="fst-italic mb-4">"Sriram delivered an outstanding e-commerce platform that exceeded our expectations. His attention to detail and problem-solving skills are exceptional. The project was completed on time and within budget."</p>
-            <h5 class="fw-bold">John Doe</h5>
-            <p class="text-muted">CEO, XYZ Company</p>
+            <div class="testimonial-img-wrapper mx-auto mb-4">
+              <img src="./assets/images/stock-photo-portrait-of-handsome-smiling-confident-businessman-isolated-on-grey-background-2302576479.jpg" 
+                   class="rounded-circle testimonial-img" 
+                   alt="John Doe" 
+                   loading="lazy">
+            </div>
+            <div class="testimonial-quote mb-4">
+              <i class="fas fa-quote-left text-primary opacity-25 fs-1 position-absolute top-0 start-0 mt-n3 ms-4"></i>
+              <p class="fst-italic position-relative px-3">"Sriram delivered an outstanding e-commerce platform that exceeded our expectations. His attention to detail and problem-solving skills are exceptional. The project was completed on time and within budget."</p>
+              <i class="fas fa-quote-right text-primary opacity-25 fs-1 position-absolute bottom-0 end-0 mb-n3 me-4"></i>
+            </div>
+            <h5 class="fw-bold mb-1">John Doe</h5>
+            <p class="text-muted small">CEO, XYZ Company</p>
           </div>
         </div>
         
         <!-- Testimonial 2 -->
         <div class="carousel-item">
-          <div class="testimonial-card text-center p-4 shadow-sm">
+          <div class="testimonial-card text-center p-4 p-md-5 shadow-sm bg-white rounded-3">
             <div class="testimonial-rating mb-3">
               <i class="fas fa-star text-warning"></i>
               <i class="fas fa-star text-warning"></i>
@@ -527,16 +691,25 @@
               <i class="fas fa-star text-warning"></i>
               <i class="fas fa-star-half-alt text-warning"></i>
             </div>
-            <img src="./assets/images/stock-photo-confident-ceo-looking-at-camera-talking-about-company-strategy-and-business-plan-explaining-1060846556.jpg" class="rounded-circle mb-3 testimonial-img" alt="Sarah Johnson" width="80">
-            <p class="fst-italic mb-4">"The blog application Sriram built was exactly what we needed. He was responsive to our requirements and provided valuable suggestions to improve the user experience. Highly recommended!"</p>
-            <h5 class="fw-bold">Sarah Johnson</h5>
-            <p class="text-muted">Founder, BlogPro</p>
+            <div class="testimonial-img-wrapper mx-auto mb-4">
+              <img src="./assets/images/stock-photo-confident-ceo-looking-at-camera-talking-about-company-strategy-and-business-plan-explaining-1060846556.jpg" 
+                   class="rounded-circle testimonial-img" 
+                   alt="Sarah Johnson" 
+                   loading="lazy">
+            </div>
+            <div class="testimonial-quote mb-4">
+              <i class="fas fa-quote-left text-primary opacity-25 fs-1 position-absolute top-0 start-0 mt-n3 ms-4"></i>
+              <p class="fst-italic position-relative px-3">"The blog application Sriram built was exactly what we needed. He was responsive to our requirements and provided valuable suggestions to improve the user experience. Highly recommended!"</p>
+              <i class="fas fa-quote-right text-primary opacity-25 fs-1 position-absolute bottom-0 end-0 mb-n3 me-4"></i>
+            </div>
+            <h5 class="fw-bold mb-1">Sarah Johnson</h5>
+            <p class="text-muted small">Founder, BlogPro</p>
           </div>
         </div>
 
         <!-- Testimonial 3 -->
         <div class="carousel-item">
-          <div class="testimonial-card text-center p-4 shadow-sm">
+          <div class="testimonial-card text-center p-4 p-md-5 shadow-sm bg-white rounded-3">
             <div class="testimonial-rating mb-3">
               <i class="fas fa-star text-warning"></i>
               <i class="fas fa-star text-warning"></i>
@@ -544,143 +717,259 @@
               <i class="fas fa-star text-warning"></i>
               <i class="fas fa-star text-warning"></i>
             </div>
-            <img src="./assets/images/stock-photo-closeup-photo-of-young-attractive-handsome-positive-bearded-man-wear-casual-shirt-2291629113.jpg" class="rounded-circle mb-3 testimonial-img" alt="Michael Lee" width="80">
-            <p class="fst-italic mb-4">"Working with Sriram was a pleasure. He's a talented developer who understands business requirements and delivers high-quality solutions. We've hired him for multiple projects and will continue to do so."</p>
-            <h5 class="fw-bold">Michael Lee</h5>
-            <p class="text-muted">Project Manager, DevTech</p>
+            <div class="testimonial-img-wrapper mx-auto mb-4">
+              <img src="./assets/images/stock-photo-closeup-photo-of-young-attractive-handsome-positive-bearded-man-wear-casual-shirt-2291629113.jpg" 
+                   class="rounded-circle testimonial-img" 
+                   alt="Michael Lee" 
+                   loading="lazy">
+            </div>
+            <div class="testimonial-quote mb-4">
+              <i class="fas fa-quote-left text-primary opacity-25 fs-1 position-absolute top-0 start-0 mt-n3 ms-4"></i>
+              <p class="fst-italic position-relative px-3">"Working with Sriram was a pleasure. He's a talented developer who understands business requirements and delivers high-quality solutions. We've hired him for multiple projects and will continue to do so."</p>
+              <i class="fas fa-quote-right text-primary opacity-25 fs-1 position-absolute bottom-0 end-0 mb-n3 me-4"></i>
+            </div>
+            <h5 class="fw-bold mb-1">Michael Lee</h5>
+            <p class="text-muted small">Project Manager, DevTech</p>
           </div>
         </div>
       </div>
 
-      <!-- Carousel Controls -->
+      <!-- Custom Carousel Controls -->
       <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="carousel-control-prev-icon bg-primary rounded-circle p-3" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
       <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="carousel-control-next-icon bg-primary rounded-circle p-3" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
   </div>
 </section>
 
-<!-- Stats Section -->
-<section class="stats-section py-5 bg-primary text-white">
-  <div class="container">
-    <div class="row text-center">
-      <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="stat-item">
-          <i class="fas fa-project-diagram fa-3x mb-3"></i>
-          <h3 class="fw-bold mb-0">25+</h3>
-          <p class="mb-0">Projects Completed</p>
+<!-- Stats Section with Scroll Fix -->
+<section id="stats" class="stats-section py-5 bg-primary text-white position-relative">
+  <!-- Invisible anchor for precise scrolling -->
+  <span id="stats-anchor" class="invisible" style="position: absolute; top: -70px;"></span>
+  
+  <!-- Animated background elements -->
+  <div class="position-absolute top-0 start-0 w-100 h-100 overflow-hidden">
+    <div class="stat-shape-1 position-absolute bg-white bg-opacity-10 rounded-circle"></div>
+    <div class="stat-shape-2 position-absolute bg-white bg-opacity-05 rounded-circle"></div>
+  </div>
+
+  <div class="container position-relative">
+    <div class="row g-4 text-center">
+      <!-- Projects Completed -->
+      <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="stat-item p-3 h-100">
+          <div class="stat-icon mb-3">
+            <i class="fas fa-project-diagram"></i>
+          </div>
+          <h3 class="fw-bold mb-2 counter" data-target="25">10+</h3>
+          <p class="mb-0 opacity-90">Projects Completed</p>
         </div>
       </div>
-      <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="stat-item">
-          <i class="fas fa-users fa-3x mb-3"></i>
-          <h3 class="fw-bold mb-0">15+</h3>
-          <p class="mb-0">Happy Clients</p>
+
+      <!-- Happy Clients -->
+      <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="stat-item p-3 h-100">
+          <div class="stat-icon mb-3">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3 class="fw-bold mb-2 counter" data-target="15">7+</h3>
+          <p class="mb-0 opacity-90">Happy Clients</p>
         </div>
       </div>
-      <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="stat-item">
-          <i class="fas fa-code fa-3x mb-3"></i>
-          <h3 class="fw-bold mb-0">50K+</h3>
-          <p class="mb-0">Lines of Code</p>
+
+      <!-- Lines of Code -->
+      <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="stat-item p-3 h-100">
+          <div class="stat-icon mb-3">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3 class="fw-bold mb-2 counter" data-target="50">50</h3>
+          <span class="h3 fw-bold mb-2">K+</span>
+          <p class="mb-0 opacity-90">Lines of Code</p>
         </div>
       </div>
-      <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="400">
-        <div class="stat-item">
-          <i class="fas fa-award fa-3x mb-3"></i>
-          <h3 class="fw-bold mb-0">5+</h3>
-          <p class="mb-0">Years Experience</p>
+
+      <!-- Years Experience -->
+      <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="stat-item p-3 h-100">
+          <div class="stat-icon mb-3">
+            <i class="fas fa-award"></i>
+          </div>
+          <h3 class="fw-bold mb-2 counter" data-target="5">5+</h3>
+          <p class="mb-0 opacity-90">Years Experience</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Contact Me Section -->
-<section id="contact" class="py-5">
-  <div class="container">
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section position-relative py-6 py-lg-7 bg-light">
+  <!-- Scroll fix anchor -->
+  <span id="contact-anchor" class="invisible" style="position: absolute; top: -70px;"></span>
+  
+  <!-- Animated Background Elements -->
+  <div class="position-absolute top-0 start-0 w-100 h-100 overflow-hidden">
+    <div class="contact-shape-1 position-absolute bg-primary bg-opacity-10 rounded-circle"></div>
+    <div class="contact-shape-2 position-absolute bg-secondary bg-opacity-10 rounded-circle"></div>
+  </div>
+  
+  <div class="container position-relative">
     <div class="section-header text-center mb-5" data-aos="fade-up">
-      <h2 class="text-primary fw-bold">Get in Touch</h2>
-      <p class="text-muted">I'd love to hear about your project</p>
+      <h2 class="text-primary fw-bold display-5">Get In Touch</h2>
+      <p class="lead text-muted mx-auto" style="max-width: 600px;">Have a project in mind or want to discuss opportunities? I'd love to hear from you.</p>
     </div>
 
-    <div class="row">
+    <div class="row g-5 justify-content-center">
       <!-- Contact Form -->
-      <div class="col-lg-6 mb-4" data-aos="fade-right">
-        <form id="contactForm" class="contact-form p-4 shadow-sm rounded">
-          <div class="mb-3">
-            <label for="name" class="form-label">Full Name <span class="text-danger">*</span></label>
-            <input type="text" id="name" name="name" class="form-control" required>
+      <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+        <div class="card border-0 shadow-lg overflow-hidden h-100">
+          <div class="card-body p-4 p-md-5">
+            <div class="d-flex align-items-center mb-4">
+              <div class="bg-primary bg-opacity-10 p-2 rounded-circle me-3">
+                <i class="fas fa-paper-plane text-primary fs-4"></i>
+              </div>
+              <h3 class="fw-bold mb-0">Send Me a Message</h3>
+            </div>
+            
+            <form id="contactForm" class="needs-validation" novalidate>
+              <div class="mb-4">
+                <label for="name" class="form-label fw-semibold">Full Name <span class="text-danger">*</span></label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text bg-light border-end-0"><i class="fas fa-user text-muted"></i></span>
+                  <input type="text" class="form-control py-2 px-3 border-start-0" id="name" placeholder="John Doe" required>
+                  <div class="invalid-feedback">Please provide your name</div>
+                </div>
+              </div>
+              
+              <div class="mb-4">
+                <label for="email" class="form-label fw-semibold">Email <span class="text-danger">*</span></label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text bg-light border-end-0"><i class="fas fa-envelope text-muted"></i></span>
+                  <input type="email" class="form-control py-2 px-3 border-start-0" id="email" placeholder="john@example.com" required>
+                  <div class="invalid-feedback">Please provide a valid email</div>
+                </div>
+              </div>
+              
+              <div class="mb-4">
+                <label for="subject" class="form-label fw-semibold">Subject</label>
+                <div class="input-group">
+                  <span class="input-group-text bg-light border-end-0"><i class="fas fa-tag text-muted"></i></span>
+                  <input type="text" class="form-control py-2 px-3 border-start-0" id="subject" placeholder="Project Inquiry">
+                </div>
+              </div>
+              
+              <div class="mb-4">
+                <label for="message" class="form-label fw-semibold">Your Message <span class="text-danger">*</span></label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text bg-light align-items-start pt-3 border-end-0"><i class="fas fa-pen text-muted"></i></span>
+                  <textarea class="form-control py-2 px-3 border-start-0" id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                  <div class="invalid-feedback">Please enter your message</div>
+                </div>
+              </div>
+              
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary btn-lg py-3 fw-bold position-relative overflow-hidden">
+                  <span class="submit-text position-relative">Send Message</span>
+                  <span class="spinner-border spinner-border-sm d-none position-absolute" role="status"></span>
+                  <i class="fas fa-paper-plane ms-2 position-relative"></i>
+                  <span class="position-absolute top-0 start-0 w-100 h-100 bg-white opacity-0 hover-opacity-10 transition-all"></span>
+                </button>
+              </div>
+            </form>
           </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
-            <input type="email" id="email" name="email" class="form-control" required>
-          </div>
-          <div class="mb-3">
-            <label for="subject" class="form-label">Subject</label>
-            <input type="text" id="subject" name="subject" class="form-control">
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Your Message <span class="text-danger">*</span></label>
-            <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary w-100 fw-bold py-2">
-            <i class="fas fa-paper-plane me-2"></i> Send Message
-          </button>
-        </form>
+        </div>
       </div>
 
-      <!-- Contact Info -->
-      <div class="col-lg-6 mb-4" data-aos="fade-left">
-        <div class="contact-info p-4 h-100 shadow-sm rounded">
-          <h4 class="fw-bold mb-4">Contact Information</h4>
-          <div class="contact-item d-flex mb-4">
-            <div class="contact-icon me-3">
-              <i class="fas fa-envelope text-primary fa-lg"></i>
+      <!-- Contact Information -->
+      <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+        <div class="card border-0 shadow-lg h-100">
+          <div class="card-body p-4 p-md-5">
+            <div class="d-flex align-items-center mb-4">
+              <div class="bg-primary bg-opacity-10 p-2 rounded-circle me-3">
+                <i class="fas fa-address-card text-primary fs-4"></i>
+              </div>
+              <h3 class="fw-bold mb-0">Contact Details</h3>
             </div>
-            <div>
-              <h5 class="fw-bold mb-1">Email</h5>
-              <a href="mailto:sriram.softwaredev@gmail.com" class="text-decoration-none">sriram.softwaredev@gmail.com</a>
+            
+            <div class="contact-info-grid">
+              <!-- Email -->
+              <div class="contact-info-item bg-light p-4 rounded-3 mb-3 transition-all hover-shadow">
+                <div class="d-flex">
+                  <div class="bg-primary bg-opacity-10 p-3 rounded-circle me-3 flex-shrink-0">
+                    <i class="fas fa-envelope text-primary fs-5"></i>
+                  </div>
+                  <div>
+                    <h5 class="fw-semibold mb-2">Email Address</h5>
+                    <a href="mailto:sriram.softwaredev@gmail.com" class="text-decoration-none stretched-link">sriram.softwaredev@gmail.com</a>
+                    <p class="small text-muted mt-1 mb-0">Typically replies within 24 hours</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Phone/WhatsApp -->
+              <div class="contact-info-item bg-light p-4 rounded-3 mb-3 transition-all hover-shadow">
+                <div class="d-flex">
+                  <div class="bg-success bg-opacity-10 p-3 rounded-circle me-3 flex-shrink-0">
+                    <i class="fas fa-phone-alt text-success fs-5"></i>
+                  </div>
+                  <div>
+                    <h5 class="fw-semibold mb-2">Phone/WhatsApp</h5>
+                    <a href="tel:+919876543210" class="text-decoration-none d-block mb-1">+91 98765 43210</a>
+                    <a href="https://wa.me/918374482572" target="_blank" class="btn btn-success btn-sm mt-1 hover-transform">
+                      <i class="fab fa-whatsapp me-1"></i> Start Chat
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Location -->
+              <div class="contact-info-item bg-light p-4 rounded-3 transition-all hover-shadow">
+                <div class="d-flex">
+                  <div class="bg-info bg-opacity-10 p-3 rounded-circle me-3 flex-shrink-0">
+                    <i class="fas fa-map-marker-alt text-info fs-5"></i>
+                  </div>
+                  <div>
+                    <h5 class="fw-semibold mb-2">Location</h5>
+                    <p class="mb-2">Hyderabad, Telangana, India</p>
+                    <button class="btn btn-outline-primary btn-sm hover-transform" data-bs-toggle="modal" data-bs-target="#locationModal">
+                      <i class="fas fa-map-marked-alt me-1"></i> View on Map
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="contact-item d-flex mb-4">
-            <div class="contact-icon me-3">
-              <i class="fas fa-phone text-primary fa-lg"></i>
+            
+            <!-- Social Connect -->
+            <div class="mt-5 pt-3">
+              <h5 class="fw-semibold mb-3">Connect With Me</h5>
+              <div class="d-flex flex-wrap gap-2">
+                <a href="https://github.com/sriram-injarapu" target="_blank" class="btn btn-icon btn-outline-dark rounded-3 hover-transform" data-bs-toggle="tooltip" title="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/sriram-injarapu" target="_blank" class="btn btn-icon btn-outline-primary rounded-3 hover-transform" data-bs-toggle="tooltip" title="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://twitter.com/sriram_injarapu" target="_blank" class="btn btn-icon btn-outline-info rounded-3 hover-transform" data-bs-toggle="tooltip" title="Twitter">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com/sriram.injarapu" target="_blank" class="btn btn-icon btn-outline-danger rounded-3 hover-transform" data-bs-toggle="tooltip" title="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://dribbble.com/yourprofile" target="_blank" class="btn btn-icon btn-outline-pink rounded-3 hover-transform" data-bs-toggle="tooltip" title="Dribbble">
+                  <i class="fab fa-dribbble"></i>
+                </a>
+                <a href="https://medium.com/yourprofile" target="_blank" class="btn btn-icon btn-outline-dark rounded-3 hover-transform" data-bs-toggle="tooltip" title="Medium">
+                  <i class="fab fa-medium-m"></i>
+                </a>
+              </div>
             </div>
-            <div>
-              <h5 class="fw-bold mb-1">Phone</h5>
-              <a href="tel:+919876543210" class="text-decoration-none">+91 98765 43210</a>
-            </div>
-          </div>
-          <div class="contact-item d-flex mb-4">
-            <div class="contact-icon me-3">
-              <i class="fas fa-map-marker-alt text-primary fa-lg"></i>
-            </div>
-            <div>
-              <h5 class="fw-bold mb-1">Location</h5>
-              <p>Hyderabad, Telangana, India</p>
-            </div>
-          </div>
-          
-          <h4 class="fw-bold mt-5 mb-3">Follow Me</h4>
-          <div class="social-links">
-            <a href="https://github.com/sriram-injarapu" target="_blank" class="social-icon me-3" title="GitHub">
-              <i class="fab fa-github fa-2x"></i>
-            </a>
-            <a href="https://linkedin.com/in/sriram-injarapu" target="_blank" class="social-icon me-3" title="LinkedIn">
-              <i class="fab fa-linkedin-in fa-2x"></i>
-            </a>
-            <a href="https://twitter.com/sriram_injarapu" target="_blank" class="social-icon me-3" title="Twitter">
-              <i class="fab fa-twitter fa-2x"></i>
-            </a>
-            <a href="https://instagram.com/sriram.injarapu" target="_blank" class="social-icon" title="Instagram">
-              <i class="fab fa-instagram fa-2x"></i>
-            </a>
           </div>
         </div>
       </div>
@@ -688,46 +977,190 @@
   </div>
 </section>
 
-<!-- Footer Section -->
-<footer class="footer-section text-white py-4">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-        <p class="mb-0">&copy; <span id="currentYear"></span> Sriram Injarapu. All Rights Reserved.</p>
+<!-- Location Modal -->
+<div class="modal fade" id="locationModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content border-0 overflow-hidden">
+      <div class="modal-header border-0">
+        <h5 class="modal-title fw-bold">My Location</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="col-md-6 text-center text-md-end">
-        <div class="social-links">
-          <a href="https://github.com/sriram-injarapu" target="_blank" class="social-icon me-3" title="GitHub">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://linkedin.com/in/sriram-injarapu" target="_blank" class="social-icon me-3" title="LinkedIn">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://twitter.com/sriram_injarapu" target="_blank" class="social-icon me-3" title="Twitter">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="mailto:sriram.softwaredev@gmail.com" class="social-icon" title="Email">
-            <i class="fas fa-envelope"></i>
-          </a>
+      <div class="modal-body p-0">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.258693874926!2d78.3678114153844!3d17.4488474053327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93dc8c5d69df%3A0x19688beb5575e5b9!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" 
+                  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </div>
     </div>
   </div>
-</footer>
+</div>
 
-<!-- Back to Top Button -->
-<a href="#" class="back-to-top" title="Back to Top">
-  <i class="fas fa-arrow-up"></i>
+<!-- WhatsApp Float -->
+<a href="https://wa.me/918374482572" class="whatsapp-float pulse" target="_blank" rel="noopener noreferrer">
+  <i class="fab fa-whatsapp"></i>
+  <span class="whatsapp-tooltip">Chat with me!</span>
 </a>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<!-- AOS Animation -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<!-- Typed.js -->
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<!-- Custom JS -->
-<script src="script.js"></script>
 
-</body>
-</html>
+<!-- Footer Section -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Brand Column -->
+      <div class="footer-brand">
+        <h3 class="footer-logo">Sriram Injarapu</h3>
+        <p class="footer-description">Full Stack Developer creating exceptional digital experiences with clean code and innovative solutions.</p>
+        
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#" class="social-link" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="social-link" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-nav">
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#" class="footer-link">Home</a></li>
+          <li><a href="#about" class="footer-link">About</a></li>
+          <li><a href="#services" class="footer-link">Services</a></li>
+          <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
+          <li><a href="#contact" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-services">
+        <h4 class="footer-title">Services</h4>
+        <ul class="footer-links">
+          <li><a href="#" class="footer-link">Web Development</a></li>
+          <li><a href="#" class="footer-link">Mobile Apps</a></li>
+          <li><a href="#" class="footer-link">UI/UX Design</a></li>
+          <li><a href="#" class="footer-link">API Development</a></li>
+          <li><a href="#" class="footer-link">Consulting</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="footer-newsletter">
+        <h4 class="footer-title">Newsletter</h4>
+        <p class="newsletter-text">Subscribe for development insights and project updates.</p>
+        
+        <form class="newsletter-form">
+          <div class="input-group">
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit" class="submit-btn">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+        </form>
+
+        <div class="contact-info">
+          <p><i class="fas fa-envelope"></i> sriram.softwaredev@gmail.com</p>
+          <p><i class="fas fa-clock"></i> Mon-Fri: 9AM - 6PM</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copyright">&copy; <span id="currentYear"></span> Sriram Injarapu. All rights reserved.</p>
+      
+      <div class="legal-links">
+        <a href="#" class="legal-link">Privacy Policy</a>
+        <span class="divider">|</span>
+        <a href="#" class="legal-link">Terms of Service</a>
+        <span class="divider">|</span>
+        <a href="#" class="legal-link">Cookies</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+</footer>
+
+
+
+<!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<!-- Custom JS -->
+<script>
+  // Initialize AOS animation
+  AOS.init({
+    duration: 800,
+    easing: 'ease-in-out',
+    once: true
+  });
+  
+  // Back to top button
+  const backToTop = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+      backToTop.classList.add('show');
+    } else {
+      backToTop.classList.remove('show');
+    }
+  });
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  
+  // Form submission handling
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const submitBtn = this.querySelector('button[type="submit"]');
+    const submitText = submitBtn.querySelector('.submit-text');
+    const spinner = submitBtn.querySelector('.spinner-border');
+    
+    submitText.textContent = 'Sending...';
+    spinner.classList.remove('d-none');
+    submitBtn.disabled = true;
+    
+    // Simulate form submission
+    setTimeout(() => {
+      submitText.textContent = 'Message Sent!';
+      spinner.classList.add('d-none');
+      submitBtn.classList.remove('btn-primary');
+      submitBtn.classList.add('btn-success');
+      
+      // Reset form after 3 seconds
+      setTimeout(() => {
+        this.reset();
+        submitBtn.classList.remove('btn-success');
+        submitBtn.classList.add('btn-primary');
+        submitText.textContent = 'Send Message';
+        submitBtn.disabled = false;
+        
+        // Show success message
+        Swal.fire({
+          icon: 'success',
+          title: 'Message Sent!',
+          text: 'Thank you for reaching out. I will get back to you soon.',
+          confirmButtonColor: '#0d6efd'
+        });
+      }, 3000);
+    }, 2000);
+  });
+  
+  // Initialize tooltips
+  const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+  tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+  });
+</script>
